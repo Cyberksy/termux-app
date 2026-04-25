@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBFLEX Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="app-body">
+  <header class="topbar glass">
+    <a href="dashboard.html" class="nav-link">← Back</a>
+    <div class="logo-sm">WEBFLEX Chat</div>
+    <span id="network-badge" class="badge"></span>
+  </header>
+
+  <main class="chat-shell">
+    <section class="chat-window glass" id="chat-window"></section>
+    <div id="typing-indicator" class="typing muted">Agent is typing...</div>
+
+    <form id="chat-form" class="chat-input-row">
+      <input type="text" id="chat-input" placeholder="Type a message..." required />
+      <label class="file-label compact">Media
+        <input type="file" id="chat-media" accept="image/*,video/*" />
+      </label>
+      <button class="btn-gold" type="submit">Send</button>
+    </form>
+
+    <div id="chat-media-preview" class="media-preview"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
