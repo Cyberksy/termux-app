@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBFLEX Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="app-body">
+  <header class="topbar glass">
+    <div class="logo-sm">WEBFLEX</div>
+    <div class="status-wrap">
+      <span id="network-badge" class="badge"></span>
+      <span id="queue-count" class="muted"></span>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <aside class="sidebar glass">
+      <div class="profile-card">
+        <h3 id="user-name">Guest User</h3>
+        <p id="user-email" class="muted">guest@webflex.app</p>
+      </div>
+      <nav>
+        <a href="dashboard.html" class="nav-link active">Feed</a>
+        <a href="chat.html" class="nav-link">Messages</a>
+        <a href="#" class="nav-link" id="logout-btn">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="feed-panel">
+      <section class="composer glass">
+        <h2>Create Post</h2>
+        <textarea id="post-text" placeholder="Share something with WEBFLEX..." rows="4"></textarea>
+        <div class="composer-actions">
+          <label class="file-label">Media
+            <input type="file" id="post-media" accept="image/*,video/*" />
+          </label>
+          <button id="publish-post" class="btn-gold">Publish</button>
+        </div>
+        <div id="media-preview" class="media-preview"></div>
+      </section>
+
+      <section class="feed-list" id="feed-list"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
