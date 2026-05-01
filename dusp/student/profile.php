@@ -1,2 +1,0 @@
-<?php require_once __DIR__ . '/../includes/config.php'; require_once __DIR__ . '/../includes/functions.php'; require_once __DIR__ . '/../includes/header.php'; require_role(['student']); ?>
-<div class="container"><div class="card"><h2>Profile & ID Card</h2><p>Name: <?= esc($_SESSION['user']['full_name']) ?></p><p>Email: <?= esc($_SESSION['user']['email']) ?></p><button onclick="window.print()">Download ID Card (Print/PDF)</button></div></div><?php require_once __DIR__ . '/../includes/footer.php'; ?>
